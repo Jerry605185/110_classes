@@ -10,7 +10,7 @@ Implement it and add functionality for the given functions
 
 class OurDict():
 
-    def __init__(keys, values):
+    def __init__(self, keys, values):
         # TODO initializes self.keys and self.values using two given lists
         pass
 
