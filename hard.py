@@ -9,8 +9,6 @@ Implement it and add functionality for the given functions
 '''
 
 class OurDict():
-    keys = []
-    values = []
 
     def __init__(keys, values):
         # TODO initializes self.keys and self.values using two given lists
