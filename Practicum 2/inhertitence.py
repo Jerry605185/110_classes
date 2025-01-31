@@ -17,6 +17,17 @@ class verboseInt(int):
 
     def __str__(self):
         # TODO redefine this so it prints how we want
+        number = abs(self)
+        word = ""
+        if(0 < self < 10):
+            word = ones[number]
+        elif(-10 < self < 0):
+            word = "negative " + ones[number]
+        elif(self > 10):
+            word = tens[number // 10] + " " + ones[number % 10]
+        elif(self<-10):
+            word = "negative " + tens[number // 10] + " " + ones[number % 10]
+        return word
         pass
 
 for val in [23, 8, 99, -20, 0, "5"]:
